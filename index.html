@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="whole">
+    <h1>Calculator</h1>
+        <div class="calculator">
+            <input type="text" placeholder="0" id="result" readonly>
+            <button onclick="displaycontent('7')" class="number">7</button>
+            <button onclick="displaycontent('8')" class="number">8</button>
+            <button onclick="displaycontent('9')" class="number">9</button>
+    
+            <button onclick="displaycontent('+')" class="sign">+</button>
+    
+            <button onclick="displaycontent('4')" class="number">4</button>
+            <button onclick="displaycontent('5')" class="number">5</button>
+            <button onclick="displaycontent('6')" class="number">6</button>
+    
+            <button onclick="displaycontent('-')" class="sign">-</button>
+    
+            <button onclick="displaycontent('1')" class="number">1</button>
+            <button onclick="displaycontent('2')" class="number">2</button>
+            <button onclick="displaycontent('3')" class="number">3</button>
+    
+            <button onclick="displaycontent('*')" class="sign">*</button>
+    
+            <button onclick="calcclear()" class="number">AC</button>
+            <button onclick="displaycontent('0')" class="number">0</button>
+            
+            <button onclick="displaycontent('/')" class="sign">/</button>
+            <button onclick="calcoutput()" id="equal" class="sign">=</button>
+            <button onclick="calcremove()" id="equal" class="sign"><i class="fa-solid fa-delete-left" style="color: #000000;"></i></button>
+
+    
+        </div>
+   </div>
+</body>
+<script src="main.js"></script>
+</html>
